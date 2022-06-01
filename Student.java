@@ -1,27 +1,32 @@
-package week3.day1;
+package org.student;
 
-public class Student {
+import org.department.Department;
+
+public class Student extends Department {
 	
-	public void getStudentInfo(int id)
+	public void studentName()
 	{
-		System.out.println(id);
+		System.out.println("Student Name");
 	}
-	public void getStudentInfo(int id, String name)
+	public void studentDept()
 	{
-		System.out.println(id);
-		System.out.println(name);
+		System.out.println("Student Dept");
 	}
-	public void getStudentInfo(String email, int phoneNumber)
+	public void studentId()
 	{
-		System.out.println(email);
-		System.out.println(phoneNumber);
+		System.out.println("Student ID");
 	}
+	//Called all methods by Multilevel Inheritance
 	public static void main(String args[])
-	
+
 	{
 		Student details = new Student();
-		details.getStudentInfo(5);
-		details.getStudentInfo(6,"Srimathi");
-		details.getStudentInfo("srimathi@testingteam.com",987654321);
+		details.collegeName();
+		details.collegeCode();
+		details.collegeRank();
+		details.deptName();
+		details.studentName();
+		details.studentDept();
+		details.studentId();
 	}
 }
